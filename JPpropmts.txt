@@ -1,0 +1,370 @@
+Prompt 1
+Ando en un datathon, me ayudas a analizar datos?
+Mira en esta carpeta Data\ExtraccionDomiVersionFinal tengo los siguientes archivos
+Data\ExtraccionDomiVersionFinal\CatBanco.csv
+IdBanco	Nombre
+1	BANCO DE MEXICO (BANXICO)
+101	BANCA CREMI
+102	ABN AMRO BANK MEXICO
+103	AMERICAN EXPRESS
+106	BANK OF AMERICA
+107	BANCO DE BOSTON
+108	BANK OF TOKYO
+110	JP MORGAN
+112	COMERICA BANK
+113	BANCO VE POR MAS
+116	ING BANK
+12	BBVA MEXICO
+124	DEUTSCHE BANK
+126	CREDIT SUIZA
+127	AZTECA
+128	AUTOFIN MEXICO, S. A.
+129	BARCLAYS BANK MEXICO
+131	BANCO FAMSA
+132	BMULTIVA
+135	NAFIN
+137	BANCOPPEL
+14	SANTANDER
+149	BANRURAL
+166	BABIEN
+168	HIPOTECARIA FED
+19	BANJERCITO
+2	BANAMEX
+21	HSBC
+22	G.E. CAPITAL
+3	BANCA SERFIN
+30	BANCO DEL BAJIO
+32	IXE
+36	INBURSA
+37	INTERACCIONES
+42	MIFEL
+44	SCOTIABANK
+58	BANREGIO
+59	INVEX
+6	BANCOMEXT
+60	BANSI
+600	CASA DE BOLSA MONEX
+601	CASA DE BOLSA GBM
+602	MASARI CASA DE BOLSA
+605	VALUE CASA DE BOLSA
+607	CASA DE CAMBIO TIBER
+608	CASA DE BOLSA VECTOR
+610	B Y B CASA DE CAMBIO
+611	INTERCAM CASA DE CAMBIO
+612	MAJAPARA CASA DE CAMBIO
+613	MULTIVALORES CASA DE BOLSA
+614	ACCIVAL CASA DE BOLSA
+615	MERRIL LYNCH CASA DE BOLSA
+616	CASA DE BOLSA FINAMEX
+62	AFIRME
+7	CITIBANK, S. A.
+72	BANORTE
+86	BANCEN
+9	BANOBRAS
+90646	STP
+9999	GASTOS DE COBRANZA
+
+Data\ExtraccionDomiVersionFinal\CatEmisora.csv
+idEmisora	Nombre	IdBanco	Emisora	TipoEnvio
+1	BANAMEX CLABE TRADICIONAL	2	NoAplica	TRADICIONAL
+2	BANAMEX CUENTA	2	NoAplica	CUENTA
+3	BANAMEX TARJETA	2	NoAplica	TARJETA
+4	BANAMEX INTERBANCARIO	2	NoAplica	INTERBANCARIO
+5	BANAMEX TRADICIONAL REINTENTO	2	NoAplica	TRADICIONAL
+6	BBVA TRADICIONAL REINTENTO	12	REINTENTO	TRADICIONAL
+7	BANORTE TRADICIONAL REINTENTO 	72	REINTENTO	TRADICIONAL
+8	SANTANDER TRADICIONAL REINTENTO 	14	REINTENTO	TRADICIONAL
+9	SANTANDER CLABE TRADICIONAL	14	00623	TRADICIONAL
+10	SANTANDER CUENTA 	14	00623	TRADICIONAL
+11	SANTANDER CLABE INTERBANCARIO	14	00623	INTERBANCARIO
+12	BANORTE CLABE TRADICIONAL	72	00496	TRADICIONAL
+13	BANORTE CUENTA TRADICIONAL	72	00496	TRADICIONAL
+14	BANORTE CLABE INTERBANCARIO	72	00496	INTERBANCARIO
+15	BANORTE CLABE EN LINEA	72	00639	EN LINEA
+16	BANORTE CUENTA EN LINEA	72	00639	EN LINEA
+17	BBVA CLABE TRADICIONAL	12	07167	TRADICIONAL
+18	BBVA CUENTA TRADICIONAL	12	07167	TRADICIONAL
+19	BBVA CLABE MATUTINO	12	06114	MATUTINO
+20	BBVA CUENTA MATUTINO	12	06114	MATUTINO
+21	BBVA CLABE EN LINEA	12	07455	EN LINEA
+22	BBVA CUENTA EN LINEA	12	07455	EN LINEA
+23	BBVA CLABE PARCIAL	12	06111	PARCIAL
+24	BBVA CUENTA PARCIAL	12	06111	PARCIAL
+25	BBVA CLABE INTERBANCARIA	12	07167	INTERBANCARIO
+
+
+Data\ExtraccionDomiVersionFinal\CatRespuestaBancos.csv
+IdRespuestaBanco	Descripcion
+00	Domiciliacion Exitosa
+01	Cuenta Inexistente
+02	Cuenta Bloqueada
+03	Cuenta Cancelada
+04	Cuenta Insuficiencia Fondos
+05	Cuenta en otra divisa
+06	Cuenta no pertenece al Banco Cliente Usuario
+07	Transaccion Duplicada
+08	Orden de no pagara a ese Emisor
+09	Importe mayor al autorizado por el cliente
+10	Domiciliacion dada de  baja
+11	Cuenta sin autorizacion para domiciliar
+12	Cliente desconoce cargo
+13	Otras causas
+14	Cuenta correcta en la validacion de cuentas
+15	Operacion fuera de horario
+16	Caracteres Invalidos
+17	Dato erroneo o invalido
+18	Error en proceso de Domiciliacion
+19	Operacion Invalida
+20	Domiciliacion Existe
+21	Baja por oficina
+22	Error de proceso
+23	Cuenta con todas las domiciliaciones dadas de baja
+24	Cuenta no admite domiciliaciones
+25	Domiciliacion no realizada
+26	Bajo Pago
+51	Cuenta inexistente
+52	Cuenta bloqueada
+53	Cuenta cancelada
+81	Operación recibida fuera de horario
+82	Caracteres inválidos 
+83	Bin inválido
+88	Bloqueo a todos los cargos
+99	Cuenta Correcta en la validación de cuentas
+D090	Inconsistencia en la Cuenta Clabe
+D091	Inconsistencia en la Cuenta Clabe
+D092	Inconsistencia en la Cuenta Clabe
+D093	Inconsistencia en la Cuenta Clabe
+D094	Inconsistencia en la Cuenta Clabe
+D095	Inconsistencia en la Cuenta Clabe
+D096	Inconsistencia en la Cuenta Clabe
+D097	Inconsistencia en la Cuenta Clabe
+D098	Inconsistencia en la Cuenta Clabe
+D099	Inconsistencia en la Cuenta Clabe
+D100	Inconsistencia en la Cuenta Clabe
+DD00001	Cuenta con Insuficiencia de Fondos
+DD00019	Cuenta con Insuficiencia de Fondos
+DD00020	Reverso del cargo a solicitud del cliente
+DD00021	Cuenta Inexistente
+DD00022	Cuenta con Insuficiencia de Fondos
+DD00023	Transacción rechazada
+DD00024	No se proceso cargo
+DD00025	Cuenta Bloqueada
+DD00026	Cuenta Cancelada
+DD00027	Transacción rechazada
+DD00028	Importe mayor al autorizado por el cliente
+DD00029	Transacción rechazada
+DD00030	Domiciliacion no realizada
+DD00031	Cuenta con Insuficiencia de Fondos
+DD00033	Domiciliacion dada de baja
+DD00034	Transacción rechazada
+DD00035	Transacción rechazada
+DD00036	ENTREGADO
+DD00037	TRANSACCION RECHAZADA
+DD00038	TRANSACCI?N RECHAZADA (OGE0076)
+DD00039	TRANSACCI?N RECHAZADA (OGE0039)
+DD00040	TRANSACCI?N RECHAZADA (OGE0041)
+DOM1	Domiciliacion Exitosa
+DOM10	Cuenta Bloqueada
+DOM11	Transacción rechazada
+DOM12	Por orden del cliente: cancelación del servicio
+DOM13	Por orden del cliente: no pagar a ese emisor
+DOM14	Transaccion Duplicada
+DOM2	Cuenta con Insuficiencia de Fondos
+DOM3	Transacción rechazada
+DOM4	Domiciliacion dada de baja
+DOM5	Cuenta Cancelada
+DOM6	Cuenta con Insuficiencia de Fondos
+DOM7	Cuenta Inexistente
+DOM8	Reverso del cargo a solicitud del cliente
+DOM9	Importe mayor al autorizado por el cliente
+INC0	Domiciliacion Exitosa
+INC1	Defuncion
+INC10	Convenio cerrado
+INC11	Instalando
+INC15	Fraude
+INC16	Cuenta Bloqueada
+INC17	Dejo de pagar
+INC18	Pago irregular
+INC19	Liquida con virtual
+INC2	Baja por jubilación
+INC21	Fuera de politica
+INC22	Liquida con transito
+INC23	Saldo menor a cuota
+INC3	Baja dependencia
+INC4	Licencia
+INC5	Amparo
+INC6	Sin liquidez
+INC7	Bajo pago
+INC8	Sin pago
+INC9	Cuenta Cancelada
+DD00041	TRANSACCI?N RECHAZADA (OGE0076)
+DD00042	TRANSACCI?N RECHAZADA (OGE0039)
+DD00043	EN
+
+Data\ExtraccionDomiVersionFinal\ListaCobroEmisora.csv
+idListaCobro	idEmisora
+79678	20
+80111	20
+80584	20
+80941	19
+81214	20
+81734	20
+82311	62
+82336	20
+82429	20
+82579	20
+82260	19
+83606	20
+83677	20
+83693	20
+83855	20
+84192	20
+84602	23
+84743	78
+84847	78
+84876	78
+84933	78
+84934	78
+84952	20
+84770	78
+84990	78
+85021	78
+85118	78
+85141	20
+85756	19
+85757	25
+85758	21
+85759	23
+85819	25
+85820	19
+85821	23
+86016	20
+86024	20
+86080	20
+86089	20
+79746	20
+84875	78
+85120	78
+86387	68
+82186	16
+86400	68
+87408	20
+80314	20
+80507	20
+81271	20
+81797	20
+82259	25
+82261	21
+82262	68
+82263	23
+83727	20
+84705	75
+85839	24
+86601	68
+87458	21
+88027	36
+88028	34
+88050	78
+82587	20
+82994	20
+84147	20
+84822	78
+84823	78
+84999	78
+86469	68
+87450	23
+87451	25
+87454	20
+88191	20
+88219	20
+88315	20
+88424	20
+82647	20
+84772	20
+84967	20
+85815	20
+86204	78
+87083	20
+88359	34
+88619	34
+88762	34
+88768	25
+88769	21
+88810	78
+88986	78
+87659	34
+87932	45
+88022	16
+89029	20
+89031	20
+89110	20
+89129	20
+89726	78
+89850	78
+86439	68
+86602	68
+87076	20
+88201	1
+88227	20
+88485	34
+89951	78
+90250	20
+90258	20
+90644	78
+85025	78
+85823	25
+85824	19
+85825	23
+85831	23
+85834	25
+87119	20
+87872	25
+87873	21
+87878	21
+87915	78
+88040	78
+etc...
+
+
+Data\ExtraccionDomiVersionFinal\ListaCobro.csv
+idListaCobro	fechaCreacionLista	idBanco	fechaEnvioCobro
+79678	04/01/2022 11:16AM	12	04/01/2022
+79746	04/01/2022 6:36PM	12	04/01/2022
+80111	11/01/2022 2:51PM	12	11/01/2022
+80314	13/01/2022 11:44AM	12	13/01/2022
+80507	14/01/2022 6:09PM	12	14/01/2022
+80584	17/01/2022 11:30AM	12	17/01/2022
+80941	20/01/2022 4:24PM	12	20/01/2022
+81214	26/01/2022 10:21AM	12	26/01/2022
+81271	26/01/2022 4:21PM	12	26/01/2022
+81430	27/01/2022 4:59PM	12	27/01/2022
+81734	31/01/2022 1:02PM	12	31/01/2022
+81797	31/01/2022 6:08PM	12	31/01/2022
+82186	04/02/2022 5:03AM	72	04/02/2022
+82259	08/02/2022 1:23PM	72	08/02/2022
+82260	08/02/2022 1:35PM	12	08/02/2022
+82261	08/02/2022 1:38PM	14	08/02/2022
+82262	08/02/2022 1:38PM	14	08/02/2022
+82263	08/02/2022 1:39PM	2	08/02/2022
+etc...
+
+
+Y luego tengo
+
+Data\ExtraccionDomiVersionFinal\ListaCobroDetalle2022.csv
+idListaCobro	idCredito	consecutivoCobro	idBanco	montoExigible	montoCobrar	montoCobrado	fechaCobroBanco	idRespuestaBanco
+100613	83021	27169966	2	572.24	572.24	0.00		04
+100613	87227	27169937	2	517.74	517.74	0.00		04
+100613	103785	27169946	2	681.23	681.23	0.00		04
+100613	110463	27169969	2	572.24	572.24	0.00		04
+100613	113755	27169948	2	340.62	340.62	0.00		04
+100613	118237	27169957	2	272.50	272.50	0.00		04
+100613	136004	27169958	2	361.06	361.06	0.00		04
+100613	137382	27169934	2	393.94	393.94	0.00		04
+100613	137885	27169970	2	289.02	289.02	0.00		04
+100613	149399	27169968	2	572.24	572.24	0.00		04
+
+etc. y similar para
+Data\ExtraccionDomiVersionFinal\ListaCobroDetalle2023.csv
+Data\ExtraccionDomiVersionFinal\ListaCobroDetalle2024.csv
+Data\ExtraccionDomiVersionFinal\ListaCobroDetalle2025.csv
