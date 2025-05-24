@@ -1,2 +1,3 @@
 # Qubitos-Datathon
-QubitOS - Datathon
+Datathon DSC
+- Team: QubitOS
