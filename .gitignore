@@ -1,1 +1,6 @@
+# Para que no se guarden sus checkpoints en específico
 .ipynb_checkpoints
+
+# Carpeta de datos
+Data/
+data/
