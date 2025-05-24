@@ -1,3 +1,62 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+*.env
+
+# Logs
+*.log
+
+# Compilados
+*.o
+*.out
+*.pyc
+*.class
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyo
+*.pyd
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# MacOS
+*.DS_Store
+
+# Linux
+*~
+
+# Windows
+*.exe
+*.dll
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archivos de bases de datos locales
+*.sqlite
+*.db
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
 # Para que no se guarden sus checkpoints en específico
 .ipynb_checkpoints
 
