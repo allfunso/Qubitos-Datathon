@@ -64,3 +64,6 @@ Makefile
 Data/
 data/
 Data\ExtraccionDomiVersionFinal
+
+# Archivo pesadísimo
+cobros_detallados.csv
