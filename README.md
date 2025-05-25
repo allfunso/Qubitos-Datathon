@@ -1,8 +1,13 @@
 # Qubitos-Datathon
 Datathon DSC
 - Team: QubitOS
-- Bases de datos: https://drive.google.com/drive/folders/1khv1OPfbibdsT35k8k4nyil453zLWjE5?usp=sharing
 - Link Presentación https://www.canva.com/design/DAGoZ3XrLA8/jijRPhVi7tZSDha7ltEbXQ/edit?utm_content=DAGoZ3XrLA8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+## Reto
+Credifiel
+1. Organizar y estructurar la información para análisis de tendencias
+2. Generar una estrategia para la operación del producto de domiciliación.
+3. Elaboración de 2 escenarios: minimice costo de comisiones y maximice cobranza.
 
 ## Objetivos
 - ¿Cómo se comporta la cartera de clientes domiciliados? ¿Qué patrones hay?
