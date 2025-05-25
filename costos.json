@@ -1,0 +1,21 @@
+{
+  "BANAMEX": {
+    "Cheques": 1.75,
+    "Tarjetas": 1.75,
+    "Interbancario": 1.75,
+    "default": 1.75
+  },
+  "SANTANDER": {
+    "Cuentas": 2.37,
+    "Reintentos": 1.42,
+    "Interbancario": 2.58,
+    "H2H": 1.90,
+    "default": 2.37
+  },
+  "BANORTE": {
+    "Cuentas": 2.50,
+    "Interbancario": 4.50,
+    "Cobro especializado": 20.00,
+    "default": 2.50
+  }
+}
