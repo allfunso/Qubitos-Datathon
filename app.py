@@ -49,12 +49,13 @@ def modo_archivo():
             costo = costos[banco][metodo]
             tasa = tasas[banco][emisora]
             expected_value = tasa * monto
-            return expected_value > costo
+            return pd.Series([expected_value, expected_value > costo])
         except KeyError:
-            # If no matching cost found, return None or False
-            return None
+            return pd.Series([None, None])  # Both values as None if lookup fails
 
-    df['potencial'] = df.apply(evaluar_fila, axis=1)
+    # Apply and assign column names
+    df[['valor_esperado', 'potencial']] = df.apply(evaluar_fila, axis=1)
+
     df.to_csv(output_path, index=False)
     print(f"✅ Archivo guardado en: {output_path}")
 
